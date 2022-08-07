@@ -1,5 +1,4 @@
 
-from turtle import title
 from django.http import HttpResponse
 from django.shortcuts import render
 
@@ -20,8 +19,12 @@ def aboutUs(request) :
 def homePage(request) :
      return render(request,"index.html",data)
 
+def showPage(request) :
+     return render(request,"middel.html")
+
 def course(request) :
     return HttpResponse("Hello Welcome to new Course")
 
 def courseDetails(request,courseId) :
     return HttpResponse(courseId)
+    
