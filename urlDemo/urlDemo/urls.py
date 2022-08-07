@@ -19,6 +19,6 @@ from urlDemo import views
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('',views.aniket123),
-    path('form/',views.form)
+    path('form/',views.form,name="form")
 
   ]
