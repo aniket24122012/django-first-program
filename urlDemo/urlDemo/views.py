@@ -12,8 +12,8 @@ def aniket123(request) :
 def form(request) :
     sum=0
     try:
-        n1 = int(request.GET.get('num1'))
-        n2 = int(request.GET.get('num2'))
+        n1 = int(request.POST.get('num1'))
+        n2 = int(request.POST.get('num2'))
         sum=n1+n2
         
     except:
