@@ -10,11 +10,12 @@ def aniket123(request) :
 
 
 def form(request) :
+    sum=0
     try:
         n1 = int(request.GET.get('num1'))
         n2 = int(request.GET.get('num2'))
-        print(n1+n2)
+        sum=n1+n2
         
     except:
         pass
-    return render(request,"form.html")
+    return render(request,"form.html",{'output':sum})
